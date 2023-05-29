@@ -40,3 +40,52 @@ for i in range(len(lista)):
 
 # Verificar tamanho da lista
 print("Comprimento da lista:", len(lista)) # A função len() pode ser usada para saber o tamnho da lista
+
+# Métodos de listas
+lista = [1, 3, 12, 8, 2]
+print("Antes do append", lista)
+
+# append
+lista.append(3) # Adiciona um novo elemneto no final da lista
+print("Depois do append", lista)
+
+# insert
+lista.insert(2, 10) # Insere um novo elemento na lista -> o primeiro paramêtro é o indice, o segundo é o novo valor
+print("Depois do insert", lista)
+
+# extend
+lista2 = [1, 2, 3]
+lista.extend(lista2) # Junta duas listas
+
+print("Depois do extend:", lista)
+
+# pop
+lista.pop() # Elimina o último elemento da lista
+print("Lista após o pop:", lista)
+
+lista.pop(0) # Elimina o elemento que está no indice passado pelo paramêtro
+print("Lista após o pop:", lista)
+
+# remove
+lista.remove(3) # Remove o primeiro elemento encontrado com o valor do paramêtro
+print("Depois do remove:", lista)
+
+# count | Contar qunatas vezes um elemento aparece na lista
+print("Quantidade de 2 na lista:", lista.count(2)) # O valor passado é o valor que estamos procurando
+
+# index | Retorna o index de um determinado elemento dentro da lista
+print("Índice do elemento 12:", lista.index(12)) # O valor passado é o valor que estamos procurando
+
+# sort
+lista.sort() # Ordenar lista em ordem crescente | descrescente 'lista.sort(reverse=true)
+print(lista)
+
+# Funcções para listas
+# sum
+print(sum(lista)) # Soma todos elementos da lista
+
+# max | Retorna o MAIOR valor da lista
+print("Maior elemento da lista:", max(lista))
+
+# min | Retorna o MENOR valor da lista
+print("Menor elemento da lista:", min(lista))
