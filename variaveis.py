@@ -9,7 +9,7 @@ print(nome)
 
 """
     Tipos de variáveis
-P
+
     2. float: números reais
     3. string: cadeia de caracteres
     4. bool: valores lógicos
